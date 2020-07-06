@@ -1,0 +1,2 @@
+in faculty(after login) ---- 1) go to create student----- name, rollno. , password
+                        2) go to marking

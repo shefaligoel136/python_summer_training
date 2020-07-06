@@ -1,0 +1,677 @@
+1....// - floor division or integer division
+2....6+5- - will show syntax error
+3....2**3 - 2 to the power of 3
+4....% - for remainder
+5    .py - extension
+6....(underscore)(operator)(value) - to act on the most recent value  
+  eg: 
+x=5
+>>> y=7
+>>> x-y
+-2
+>>> _+5
+3
+
+7.... using * 
+     (1) d='a \n'
+       k = d*5
+>>> print(k)
+a 
+a 
+a 
+a 
+a 
+      (2)a='she'
+a*10
+'sheshesheshesheshesheshesheshe'
+
+8..... negative indexing
+
+      -7 -6 -5 -4 -3 -2 -1
+       s  h  e  f  a  l  i
+       0  1  2  3  4  5  6
+
+9..... name="shefali"
+       name[0:3]
+       'she'
+
+10.... 3rd parameter
+     name[0:8:2]
+     2 means for gap
+
+11.... for printing the string in reverse
+          name[7::-1]
+          'ilafehs'
+              or
+          name[::-1]
+          'ilafehs'     (where 3rd parameter is -1, it will take 1st parameter as the last index and the 2nd parameter as the starting index)
+12.... LIST (are mutable and heterogenous and are multidimensional)
+       eg:
+           a=[0,1,2,3]
+           b=['a','b','c','d']
+           value[a,b] #vaue is now multidimensional
+12(i).... append
+         eg:
+             a.append(5)
+  (ii).... insert
+         eg:
+            a.insert(3,2)
+               # here, 3 is the index.
+  (iii).... remove
+          eg:
+             a.remove(4)
+               # here, 4 is the value
+  (iv).... pop
+          eg:
+             a.pop(2)
+               # here, 2 is the index
+               # if no index is iven it will pop/remove the last value
+  (v).... del
+          eg:
+             del a[0:2]
+             # here element at index 0&1 will be removed/deleted
+  (vi).... extend
+          eg:
+             a.extend([8,7,6])
+  (vii).... max
+          eg:
+              max(a)
+  (viii).... sum
+           eg:
+               sum(a)
+  (ix).... sort
+           eg:
+               a.sort()
+  (x).... sort in descending order
+          eg:
+               a.sort(reverse = True)
+13.... press ctrl+space after . operator to access functions(inbuild)
+
+14.... tuple (immutable)
+       # syntax is in round brackets 
+       ---> n=(1,2,3,4)
+
+15.... DATA TYPES
+       (i)... none
+       (ii)... numeric ... (a). int
+                           (b). float
+                           (c). bool {boolean: True,False}
+                           (d). complex
+
+       (iii)... dictionary ...(a)DEFINITION:
+                                           a={'name':'shefali','class':'1st'}
+                                           type(a)
+                                           <class 'Dict'>                
+                              (b)Accessing Keys:
+                                               a={'names':'shefli','class':'1st'}
+                                               a.keys()
+                                               dict_keys{['names','class']}
+
+                              (c)Accessing Values:
+                                               a={'names':'shefli','class':'1st'}
+                                               a.values()
+                                                dict_values{['shefali','1st']}
+                              (d)Accessing specific index:
+                                               a={'names':'shefli','class':'1st'}
+                                               a[class]
+                                               1st
+
+
+                              
+
+
+       (iv)... sequence ...(a). tuble
+                        ...(b). list
+                        ...(c). range-----> var2= range(numeric_starting_value,numeric_last_value)-----> eg: a=range(0,10)
+                                                                                                             type(a)
+                                                                                                             <class 'Range'>
+                        ...(d). string
+
+16.... data type Conversion
+{num is a variable here}
+        ...float(num)
+        ...int(num)
+        ...complex(var1,var2) = var1+var2j
+        ...{to convert int into boolean}---> int(var)---> will return 1/0 
+        ...{to convert boolean into int}---> bool(var)---> will return True/False
+
+17.... OPERATORS.... (a). Arithmetic
+                     (b). Assignment
+                     (c). Relational
+                     (d). Logical
+                     (e). Bitwise ---->
+                                    1. AND (&)
+                                    2. OR  (|)
+                                    3. XOR (^)
+                                    4. Left Shift (<<)
+                                    5. Right Shift (>>)
+                      eg. 12 & 13 = 12
+                          12 = 1100 
+                          13 = 1101
+                          after & operation = 1100 (12)
+                                |           = 1101 (13)
+                                ^           = 1
+
+                      eg. 10<<2 = 40
+                          00001010.000 -> 10
+                          0000101000.0 -> 40
+
+                       eg. 10>>2 = 2
+                          00001010.000 -> 10
+                          000010.10000 -> 2
+
+18.... MATH MODULE.... 
+                     >>import math
+                     >>x = math.sqrt(25)
+                     >>x
+                       5.0
+          
+             2. floor
+             3. ceil
+             4. power {pow}
+
+19.... ALICE MATH MODULE 
+                  >>import math as m
+                  >>x = m.sqrt(25)
+                  >>x
+                    5.0
+
+20.... IMPORT SPECIFIC FUNCTION OF MATH MODULE
+         >>from math import sqrt
+         >>sqrt(25)  #here we dont need to write math.  
+           5.0
+                    or
+         >>from math import sqrt, pow, ceil
+         >>sqrt(25)  #here we dont need to write math.  
+           5.0
+
+21.... HELP 
+       >>help('module_name')   #help('math')
+
+22.... INPUT
+       x = input("please enter your input")
+           """ input func only accept string
+                x = input("please enter your input")
+                print(type(x))
+                please enter your input 56
+          output-->  <class 'str'> """
+
+23.... Passing Arguments Input in CMD
+       #sys module -->system
+       #[0]---> holds file ie file_name.py
+               import sys
+               x=sys.argv[1]
+               y=sys.argv[2]
+               c=x+y
+               print(c)
+
+
+23.... suite--> block of if-else
+
+24.... indentation is important in if-elif-else
+
+25.... x=5
+       if x==1:
+               print("1")
+       elif x==2:
+               print("2")
+       elif x==3:
+               print("3")
+       else:
+               print("invalid")
+
+26.... LOOPS
+           (i)while ---> initialization
+                         condition
+                         updation
+                 nested while loop:
+                                     x=0
+                                     while x<=5:
+                                      print("python",end="")  
+                                      j=0
+                                      while j<=5:
+                                       print("rocks",end="")  
+                                       j=j+1
+                                      x=x+1
+                                      print()  
+           (ii)for 
+                        for i in range(20,0,-1):
+                                print(i)
+                PASS STATEMENT 
+                       for i in range(1,100,1):
+                          if i%2!=0:
+                                    pass  #use it when we have to leave the statements in a particular cond. as blank
+                          else:
+                                    print(i)
+          
+         (iii) for-else
+                   a=[1,2,3,4,6,7]
+                   for x in a:
+                      if(x%5==0):
+                        print(x)
+                        break
+                   else:
+                      print("not found!")
+
+27.... function
+               DEFINITION
+               def greet():
+                   print("Hello World!")
+                   print("Good Morning")
+ 
+               CALLING
+                  greet()
+ 
+               PARAMETER
+                   (i) formal --> in function def
+                   (ii) actual --> in calling func.
+
+              TYPES OF ARGUMENTS
+                    (i) position 
+                           def p(n,a):
+                            print("name:",n)
+                            print("age:",a)
+                           p("shefali",19) # shefali 
+                                           # 19
+                           p(19,"shefali") # 19
+                                           #shefali
+                    (ii) keyword
+                            def p(n,a):
+                             print("name:",n)
+                             print("age:",a)
+                           p(n="shefali",a=19)# shefali 
+                                              # 19
+                           p(a=19,n="shefali")# shefali 
+                                              # 19
+                                                       
+                    (iii) default
+                            def add(x=5,y=7):
+                                 z= x+y
+                                 print(z)
+                            add(3,9)   #5,9 will be taken in consideration
+
+                    (iv) variable length
+                            # '*' means select all
+                               def(a,*b):
+                                  for i in b:
+                                     a+ = i
+                                  print(a)
+                               add(2,5,7)
+
+28....keyword length variable
+            * --> for key
+             * --> for value 
+     def person(*a,**b):
+       print(a)
+       print(b)
+     person("shefali","goel",city="kanpur",age=19)
+     output---> """('shefali', 'goel')
+                   {'city': 'kanpur', 'age': 19}"""
+
+29.... returning 
+             
+  1) def func(a,b):
+       c = a+b
+       return c   #returns 1 value
+     num = func(va1,va2)
+     print(num)
+  
+  2) def func_now(a,b):
+       c = a+b
+       d = a-b
+       return c,d  #returns 2 values
+     num1,num2 = func_now(va1,va2)
+     print(num1,num2)
+
+30.... global/local variable
+
+       a=10
+       def hello():
+           a=15
+           print(a)
+       hello()
+       print(a)
+       ----------------------
+       a=10
+       def hello():
+           global a # USE KEYWORD "GLOBAL" TO CHANGE THE VALUE OF THE ORIGINAL GLOBAL VALUE
+           a=15
+           print(a) 
+       hello()
+       print(a)
+
+31.... WE CAN PASS LIST/TUPLE/SET TO A FUNCTION
+
+32.... ANONYMOUS FUNCTION(LAMBDA)  ----> called so because we don't give it a name
+    1.
+       f = lambda a,b:a+b
+       result = f(5,6)
+       print(result)
+
+   2. using filter with lambda
+    
+       num=[1,2,3,4,5,6,32,21] 
+       r = filter(lambda n:n%2==0,num)
+       for i in r:
+           print(i)
+
+  3. using map with lambda
+
+       num=[1,2,3,4,5,6,32,21] 
+       r = list(map(lambda n:n*2==0,num))s
+       for i in r:
+           print(i)
+
+  4. functools--->reduce
+     
+     from functools import reduce
+     num=[1,2,3,4,5,6,32,21] 
+     r = reduce(filter(lambda a,b:a+b,num))
+     print(r)
+
+
+33....    __name__  means __main__ in same file
+                    and it means the name of the file in the which it is written if it is called in any other file 
+
+34....   object is passed as a parameter by default when the object calles a function in class----- 
+                    hence we use self in function definition(it is a standard) but we can use any other variable
+
+35....  formated string ----    print(f"my name is {name} and my age is{age}")
+      
+36.... def __init__(self):
+            #init is special variable works like a constructor 
+
+37.... id --for knowing the heap memory
+
+38.... POLYMORPHISM
+        1) Duck Typing
+        2) operator overloading
+        3) method overoading
+        4) method overriding
+
+
+39.... FILE IN PYTHON
+
+       open("filename","mode")
+
+       modes are:-     x (create)
+                       r (read)
+                       a (append)
+                       w (write)
+
+       removing a file :
+                          import os
+                          os.remove("filename") 
+       """os checks in the current directory in which it is being executed if not in current directory then you have to give the path"""
+
+            or
+                         
+                          import os
+                          if os.path.exists("filename"):
+                             os.remove("filename")
+                          else:
+                             print("not there")
+
+40...DJANGO
+             
+           pip install virtualenvwapper-win
+           mkvirtualenv learnpython
+           pip install django
+           workon learnpyhton
+                                           PYTHON WORKS IN ---- MVT FORM IE.----MODEL VIEW TEMPLATE
+
+41.... workon learnpython
+       python manage.py runserver
+ ctrl+c
+       python manage.py startapp calculator
+
+42.... make urls in calculator (your application) folder
+      
+43.... add this to your urls in calculator
+  from django.urls import path
+  from . import views
+  urlpatterns = [
+    path('', views.home,name="home"),
+                ]
+                                    . means current directory
+                                   '' mean root dirctory - 127.0.0.1:8000/
+
+44.... send request in views.py
+       from django.shortcuts import render
+       from django.http import HttpResponse
+
+       # Create your views here.
+
+       def home(request):
+	        return HttpResponse("This is home view file")
+
+45.... open urls in pro1 and write
+    from django.contrib import admin
+    from django.urls import path,include
+
+    urlpatterns = [
+    path('', include('calculator.urls')),
+	path('admin/', admin.site.urls),
+                  ] 
+
+46.... 
+      make a template name folder where manage is present
+      create a html file and store inside template folder
+      in setting go to dirs in templates write the path 
+      'DIRS': [BASE_DIR,os.path.join('template')],
+      make changes in view of calculator ------                                             from django.shortcuts import render
+						# from django.http import HttpResponse
+
+						# Create your views here.
+
+						def home(request):
+							return render(request,'pyhome.html')  
+
+                                                                                                     or
+
+                                                                                                                        from django.shortcuts import render
+       						     from django.http import HttpResponse
+
+       						     # Create your views here.
+
+      						    def home(request):
+	       						 return HttpResponse("<h1>this is in httpresponse</h1>")
+                                                                          
+
+47.... START WITH DATABASE
+
+1.... sync installed app with database:
+           python manage.py migrate
+
+2.... Create model(database ) in model in your app:
+       create a class
+       inherit model in class
+       define all columns as variable
+
+3.... Add your app in settings installed apps;
+       for eg:  appname.app.app_class_name --------> student.apps.StudentConfig
+
+4.... Migrate your app:
+       python manage.py makemigrations appname
+
+-----------> (learnpython) C:\Users\thebe\theproject2\result>python manage.py makemigrations student
+	Migrations for 'student':
+  	student\migrations\0001_initial.py
+   	 - Create model user_login
+(here all the migrations are done in 0001)
+
+
+5.... To check your database in sqlformat:
+        python manage.py sqlmigrate appname id
+
+6.... Sync your app with database:
+       python manage.py migrate
+
+
+----------------DATABASE-COMMAND-LINE------------------
+ 
+7.... To start shell:
+       python manage.py shell
+
+8.... Import database table:
+       from appname.models import table_name
+
+9.... To check full table:
+       table_name.objects.all()
+
+10.... To insert a row:
+          a = table_name(colname="value",colname="value")
+>>> a = user_login(fname="shefali",username="shefaligoel",password="goelshefali")
+>>>a 
+<user_login: user_login object (None)>
+>>> a.save()
+>>>a
+>>><user_login: user_login object (1)>
+  as many time a will be saved a new row will be created
+>>> k = user_login.objects.all()     ------> this s binding for easier access-----> you can create an object and everyting get indexed----> we can use loop to see the things
+>>> k
+<QuerySet [<user_login: user_login object (1)>]>
+>>> k[0].fname
+'shefali'
+>>> a.fname------> to access column
+'shefali'
+
+11.... To filter data from database:
+          k = table_name.object.filter(id=1)
+          k[0].column_name
+
+         k = table_name.objects.filter(column_name__startswith="s")
+         k[0].column_name
+
+-----------* >>> b = user_login(fname="abc", username="abcdef", password="qwerty")
+	>>> b.save()
+	>>> k
+	<QuerySet [<user_login: user_login object (1)>, <user_login: user_login object (2)>]>
+	>>> k = user_login.objects.filter(id=2)
+	>>> k
+	<QuerySet [<user_login: user_login object (2)>]>
+	>>> k[0].fname
+	'abc'
+
+12.... To delete row:
+          table_name.objects.filter(id=2).delete()
+
+13.... To update data:
+	k = table_name.objects.get(column_name="value')
+	k.column_name="update value"
+	k.save()
+	or
+	k.update(column_name="value",column_name="value") 
+
+
+
+
+
+
+
+
+-----------SESSIONS---------
+	helps in tracking.
+	session is more secure than cookie
+	if-else to be used in the created session
+	
+	in -faculty-view-- if len(res)==1:
+				request.session['user'] = username
+							or fetch from database
+				request.session['user']=res[0].fuser #better way
+
+    in -faculty-view--- def home(request):
+							if request.session.get('user'):
+								return redirect('fhome')
+							else:
+								return render(request,'faculty.html')
+								
+	in faculty-view--- def fhome(request):
+							if request.session.get('user')
+								request.render(request,'fhome.html')
+								
+								
+						def flogout(request):
+							del request.session['user']
+							return redirect('/faculty/')
+
+
+
+
+
+Start with Database:
+
+1. Sync installed app with database:
+	python manage.py migrate
+
+2. Create model(database) in models in your app:
+	Create a class
+	Inherit Model in class
+	Define all columns as variables
+
+3. Add your app in settings's Installed apps:
+	for eg. appname.apps.app_class_name
+
+4. Migrate your app:
+	python manage.py makemigrations appname
+	
+5. To check your database in sql format:
+	python manage.py sqlmigrate appname id
+
+6. Sync your app with database:
+	python manage.py migrate
+	
+
+************	Database-Command-Line	**************
+
+7.  To start shell:
+	python manage.py shell
+	
+8. Import database table:
+	from appname.models import table_name
+	
+9. To check full table:
+	table_name.objects.all()
+	
+10. To insert a row:
+	a=table_name(colname="value",colname="value")
+	
+	a.save()
+
+11. To access column:
+	a.colname
+	
+12. To filter data from database:
+	k=table_name.objects.filter(id=1)
+	k[0].column_name
+	
+	k=table_name.objects.filter(column_name__startswith="S")
+	k[0].column_name
+	
+13. To delete row:
+	table_name.objects.filter(id=2).delete()
+
+14. To update data:
+	k=table_name.objects.get(column_name="value")
+	
+	k.column_name = "updated value"
+	k.save()
+	or
+	k.update(column_name="value", column_name="value")
+	
+	
+************	Activate admin		*****************
+
+14. Create a user for admin:
+	python manage.py createsuperuser
+	
+15. Runserver:
+	python manage.py runserver
+	
+16. Login into admin page:
+	http://127.0.0.1:8000/admin/
+	
+17. To access our database table make a entry in admin file in your app:
+	from .models import table_name
+	admin.site.register(table_name)
+       

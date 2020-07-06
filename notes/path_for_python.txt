@@ -1,0 +1,6 @@
+                                                                   SETTING PATH FOR WINDOWS
+
+
+       1). C:\Users\Your_Username\AppData\Local\program\Python\Python37-32
+       
+       2). C:\Users\Dell\AppData\Local\programs\Python\Pythn37-32\Scripts
