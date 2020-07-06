@@ -1,0 +1,12 @@
+<form action="create_account" method='post'>
+{% csrf_token %}
+
+Name: <input type="text" name="sname" required><br><br>
+Password: <input type="password" name="spassword" required><br><br>
+Roll number: <input type="number" name="srollnum" required><br><br>
+
+<input type="submit" name="Create"><br><br>
+</form>
+{{error}}
+
+

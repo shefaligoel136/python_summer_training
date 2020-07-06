@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Student Login</h1>
+<form action="slogin" method="post">
+{% csrf_token %}
+Roll Number: <input type="text" name="rollnum"><br><br>
+Password: <input type="password" name="spass"><br><br>
+<input type="submit" value="Login">
+</form>
+{{error}}
+{% endblock %}

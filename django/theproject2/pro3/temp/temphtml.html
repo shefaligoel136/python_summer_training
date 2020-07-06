@@ -1,0 +1,50 @@
+{% extends 'thecalc.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#box
+                {
+	                    width:23%;
+						height:58%;
+						margin-left:500px;
+						margin-top:100px;
+						background-color:#f1f1f1;
+						border: 1px solid #e5e5e5;
+						box-shadow: 5px 5px 5px #ccc;
+						padding:2%
+						
+						
+	            }
+</style
+</head>
+<body></body>
+<div id=box>
+<form action="solve1" method="post">
+{% csrf_token %}
+    <span>ENTER TWO DIGITS AND AN OPERATOR</span><br><br>
+    <input type="text" name="num1" maxlength="4" size="4">
+	<input maxlength="2" size="2" type="text" name="op">
+    <input type="text" name="num2" maxlength="4" size="4">
+			 <input type="submit" value="calculate"><br><br>
+	<h3>RESULT={{res}}<h3><br>
+</form>	
+	
+	<div style="text-align: center;font-weight: normal;">
+	<span>OR</span>
+	</div><br>
+	
+<form action="solve2" method="post">
+{% csrf_token %}
+    <div style="font-weight: normal;">
+	<span>ENTER A EXPRESSION</span></div><br>
+	<input type="text" name="num">
+			 <input type="submit" value="calculate"><br><br>
+	<h4>RESULT={{res1}}<h4><br><br>
+</form>		 
+</div>
+
+</body>
+</html>
+{% endblock %}

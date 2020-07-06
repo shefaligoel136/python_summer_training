@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Create Account</h1>
+<h3><a href="home">Home</a></h3>
+<form action="create_account" method="post">
+{% csrf_token %}
+Roll Number: <input type="number" name="rollnum"><br><br>
+Name: <input type="text" name="sname"><br><br>
+Password: <input type="password" name="spass"><br><br>
+<input type="submit" value="Create">
+</form>
+{{error}}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Marks</h1>
+<h3><a href="home">Home</a></h3>
+<table border="1" width="100%">
+<tr>
+	<th>Roll Number</th>
+	<th>Name</th>
+	<th>Marks</th>
+</tr>
+{% for i in res %}
+<tr>
+	<td>{{i.rollnum}}</td>
+	<td>{{i.sname}}</td>
+	<td>{{i.marks}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

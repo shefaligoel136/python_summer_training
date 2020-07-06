@@ -1,0 +1,25 @@
+<p>template</p>
+{{ request.user }}
+<p>{{ my_text}},{{my_number }}, {{my_list}}</p>
+
+<ul>
+	<li>item1</li>
+	<li>item2</li>
+</ul>
+<ul>
+{% for my_my_sub_item in my_list %}
+		{% if my_my_sub_item == 123 %}
+		  <li>{{ forloop.counter }}--{{ my_my_sub_item|add:22 }}</li>	
+		{% elif my_my_sub_item == "abc" %}
+		  <li>no network</li>
+		{% else %}
+		  <li>{{ forloop.counter }}--{{ my_my_sub_item }}</li>
+		{% endif %}
+{% endfor %}
+</ul>
+
+<ul>
+{% for my_my_sub_item in my_list %}
+	<li>{{ my_my_sub_item }}</li>
+{% endfor %}
+</ul>
